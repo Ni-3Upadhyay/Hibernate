@@ -1,3 +1,4 @@
+// adding a comment to check whether i am doing it correct.
 package EmbeddableAnnotation;
 
 import javax.persistence.Embeddable;
