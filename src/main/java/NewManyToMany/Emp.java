@@ -1,8 +1,6 @@
 package NewManyToMany;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +12,8 @@ public class Emp {
     private int id;
     private String emp_name;
 
-    @ManyToMany(mappedBy = "employee")
+//    , fetch = FetchType.EAGER, used for Eager fetching.
+    @ManyToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<Address> add;
 
 

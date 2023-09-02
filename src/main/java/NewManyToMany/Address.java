@@ -15,6 +15,16 @@ public class Address {
     @ManyToMany
     private List<Emp> employee;
 
+    public Address(){
+        super();
+    }
+
+    public Address(int id, String city, List<Emp> employee){
+        this.id = id;
+        this.employee = employee;
+         this.city = city;
+    }
+
     public int getId() {
         return id;
     }
