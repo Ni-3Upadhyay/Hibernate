@@ -18,13 +18,13 @@ public class Read {
 
 //        For whole table :-
 
-//        List<Student> list = session.createQuery("from Student", Student.class).list();
+//        List<Employee> list = session.createQuery("from Employee", Employee.class).list();
 //        list.forEach(e -> System.out.println(e));
 
 
 //        For getting row by id :-
 
-//        Student student = session.load(Student.class, 5);       // in case of load if the id is wrong it gives error saying object not found
+//        Employee student = session.load(Employee.class, 5);       // in case of load if the id is wrong it gives error saying object not found
 //        System.out.println(student);
 
         Student student = session.get(Student.class, 2);       // in case of get if the id is wrong it gives null not error

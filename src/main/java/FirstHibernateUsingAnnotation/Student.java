@@ -45,7 +45,7 @@ public class Student {
     }
 
     public String toString(){
-        return "Student : name = " + this.name + " id = " + this.id + " city = " + this.city;
+        return "Employee : name = " + this.name + " id = " + this.id + " city = " + this.city;
      }
 
 }
